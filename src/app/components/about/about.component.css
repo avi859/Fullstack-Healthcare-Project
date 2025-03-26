@@ -1,0 +1,206 @@
+/* About Us Hero Section */
+.about-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .about-hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 1.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Key Features Section */
+  .key-features {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 4rem 2rem;
+    background: white;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    text-align: center;
+    max-width: 300px;
+    margin: 1rem;
+  }
+  
+  .step-icon {
+    font-size: 2rem;
+    background: #2575fc;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .step-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    padding: 4rem 2rem;
+    background: #2575fc;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-5px);
+    background: #e65a50;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  
+  .footer-section {
+    margin: 1rem 0;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ff6f61;
+  }
+  
+  .payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .payment-icons img {
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
