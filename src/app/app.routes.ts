@@ -16,6 +16,7 @@ import { PackageCardComponent } from './pages/package-card/package-card.componen
 import { PreConceptionComponent } from './pages/pre-conception/pre-conception.component';
 import { SeniorCitizenComponent } from './pages/senior-citizen/senior-citizen.component';
 import { RecommendComponent } from './pages/recommend/recommend.component';
+import { ServicesComponent } from './components/services/services.component';
 // import { ChatComponent } from './components/chat/chat.component';
 
 
@@ -37,5 +38,6 @@ export const routes: Routes = [
     { path: 'package-card', component: PackageCardComponent },
     { path: 'pre-conception', component: PreConceptionComponent },
     { path: 'senior-citizen', component: SeniorCitizenComponent },
-    { path: 'recommended', component: RecommendComponent }
+    { path: 'recommended', component: RecommendComponent },
+    { path: 'service', component: ServicesComponent }
 ];
