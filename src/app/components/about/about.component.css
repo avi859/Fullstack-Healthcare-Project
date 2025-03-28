@@ -1,204 +1,211 @@
 .about-container {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  color: #2c3e50;
 }
 
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-              url('https://img.freepik.com/free-photo/team-doctors-standing-together-hospital-premises_107420-84766.jpg');
+              url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2000');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
-  padding: 160px 0 120px;
+  padding: 200px 0;
   text-align: center;
   position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero-section h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .hero-section p {
-  font-size: 1.6rem;
-  opacity: 0.9;
-  margin-bottom: 30px;
+  font-size: 1.8rem;
+  opacity: 0.95;
+  margin-bottom: 35px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border: 2px solid transparent;
+}
+
+.cta-button:hover {
+  background: transparent;
+  border-color: white;
+  transform: translateY(-3px);
 }
 
 .accreditation-badges {
-  margin-top: 30px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .accreditation-logo {
-  height: 60px;
-  margin: 0 15px;
+  height: 70px;
   filter: brightness(0) invert(1);
   opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
-.values-section {
-  padding: 80px 0;
-  background-color: #ffffff;
-}
-
-.value-card {
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  margin-bottom: 30px;
-}
-
-.value-card:hover {
-  transform: translateY(-10px);
-}
-
-.icon-wrapper {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  background: #3498db;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-wrapper i {
-  font-size: 35px;
-  color: white;
-}
-
-.value-card h3 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.value-card p {
-  color: #7f8c8d;
-  line-height: 1.6;
-}
-
-.mission-section {
-  padding: 100px 0;
-  background-color: #f8f9fa;
-  position: relative;
-}
-
-.mission-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0) 100%);
-}
-
-.mission-section h2 {
-  color: #2c3e50;
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.mission-content {
-  padding: 30px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.mission-content .lead {
-  color: #3498db;
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-  font-weight: 500;
-}
-
-.mission-content ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.mission-content ul li {
-  padding: 12px 0;
-  font-size: 1.1rem;
-  color: #34495e;
-  display: flex;
-  align-items: center;
-}
-
-.mission-content ul li:before {
-  content: "✓";
-  color: #3498db;
-  margin-right: 15px;
-  font-weight: bold;
-  background: rgba(52, 152, 219, 0.1);
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.team-section {
-  padding: 100px 0;
-  background: #ffffff;
+.accreditation-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .section-title {
   text-align: center;
   color: #2c3e50;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
   font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #3498db;
 }
 
 .section-subtitle {
   text-align: center;
   color: #7f8c8d;
-  font-size: 1.2rem;
-  margin-bottom: 50px;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.values-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.value-card {
+  text-align: center;
+  padding: 45px 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(52,152,219,0.3);
+}
+
+.icon-wrapper i {
+  font-size: 40px;
+  color: white;
+}
+
+.value-card h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #7f8c8d;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.team-section {
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .team-card {
-  margin-bottom: 40px;
   background: white;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-.image-container {
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.team-image {
   position: relative;
+  padding-top: 100%;
   overflow: hidden;
 }
 
-.image-container img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.overlay {
+.team-image img {
   position: absolute;
-  bottom: -100%;
+  top: 0;
   left: 0;
-  right: 0;
-  background: rgba(52, 152, 219, 0.9);
-  color: white;
-  padding: 20px;
-  transition: bottom 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.team-card:hover .overlay {
-  bottom: 0;
+.team-card:hover .team-image img {
+  transform: scale(1.1);
 }
 
 .team-info {
@@ -207,6 +214,7 @@
 }
 
 .team-info h3 {
+  font-size: 1.5rem;
   color: #2c3e50;
   margin-bottom: 5px;
   font-weight: 600;
@@ -214,19 +222,46 @@
 
 .team-info .role {
   color: #3498db;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
   font-weight: 500;
-  margin-bottom: 5px;
 }
 
 .team-info .credentials {
   color: #7f8c8d;
   font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-3px);
 }
 
 .stats-section {
   background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
@@ -244,48 +279,59 @@
 
 .stat-card {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   position: relative;
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
 }
 
 .stat-icon {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 25px;
   opacity: 0.9;
 }
 
 .stat-card h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .stat-card p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   opacity: 0.9;
   margin: 0;
+  font-weight: 300;
 }
 
 .testimonials-section {
-  padding: 100px 0;
+  padding: 120px 0;
   background: #f8f9fa;
 }
 
 .testimonial-card {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
   margin-bottom: 30px;
   position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
 }
 
 .quote {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #3498db;
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 20px;
   opacity: 0.1;
   font-family: Georgia, serif;
@@ -294,52 +340,94 @@
 .testimonial-card .content {
   font-style: italic;
   color: #34495e;
-  margin-bottom: 20px;
-  line-height: 1.6;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.patient-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.patient-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.patient-details {
+  flex: 1;
 }
 
 .patient-info .name {
   color: #2c3e50;
   font-weight: 600;
   margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 .patient-info .treatment {
-  color: #7f8c8d;
-  font-size: 0.9rem;
+  color: #3498db;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 100px 0 80px;
+    padding: 120px 0;
   }
 
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   .accreditation-logo {
-    height: 40px;
-    margin: 0 10px;
+    height: 50px;
   }
 
-  .value-card {
-    margin-bottom: 20px;
+  .section-title {
+    font-size: 2.2rem;
   }
 
-  .team-card {
-    margin-bottom: 30px;
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .stat-card h3 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
   }
 
-  .mission-content {
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stat-card {
     padding: 20px;
+  }
+
+  .testimonial-card {
+    padding: 25px;
   }
 }
