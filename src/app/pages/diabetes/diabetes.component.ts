@@ -10,4 +10,8 @@ import { healthCategories } from '../../data/package.data/package.data.component
 })
 export class DiabetesComponent {
   diabetesPackages = healthCategories.find(cat => cat.id === 4)?.packages || [];
+  goBack(): void {
+    window.history.back();
+  }
+  
 }

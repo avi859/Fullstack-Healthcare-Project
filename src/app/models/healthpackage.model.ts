@@ -1,16 +1,16 @@
 export interface HealthPackage {
   id: number;
   name: string;
-  testsIncluded: number;
-  hospital: string;
-  price: number;
-  tests: string[];
-  icon?: string;          // Optional property
-  startingPrice?: number; // Optional property
+  icon?: string;
+  startingPrice?: number; // Marked as optional
+  description?: string;   // Marked as optional
+  testsIncluded: any;
+  tests: any;
+  hospital: any;
+  price: any;
 }
 
-  
-  
+
   export interface Category {
     id: number;
     name: string;

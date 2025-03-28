@@ -13,6 +13,9 @@ import { CancerScreeningComponent } from './pages/cancer-screening/cancer-screen
 import { DiabetesComponent } from './pages/diabetes/diabetes.component';
 import { GeneralHealthComponent } from './pages/general-health/general-health.component';
 import { PackageCardComponent } from './pages/package-card/package-card.component';
+import { PreConceptionComponent } from './pages/pre-conception/pre-conception.component';
+import { SeniorCitizenComponent } from './pages/senior-citizen/senior-citizen.component';
+import { RecommendComponent } from './pages/recommend/recommend.component';
 // import { ChatComponent } from './components/chat/chat.component';
 
 
@@ -28,8 +31,11 @@ export const routes: Routes = [
     { path: 'ome', component: OmeComponent},
     { path: 'chat' , component: HealthcareChatbotComponent},
     { path: 'health-checkup', component:HealthCheckupComponent},
-    { path: 'cancer-screeing' , component:CancerScreeningComponent},
+    { path: 'cancer-screening' , component:CancerScreeningComponent},
     { path: 'diabetes', component: DiabetesComponent },
     { path: 'general-health', component: GeneralHealthComponent },
     { path: 'package-card', component: PackageCardComponent },
+    { path: 'pre-conception', component: PreConceptionComponent },
+    { path: 'senior-citizen', component: SeniorCitizenComponent },
+    { path: 'recommended', component: RecommendComponent }
 ];

@@ -10,4 +10,8 @@ import { healthCategories } from '../../data/package.data/package.data.component
 })
 export class GeneralHealthComponent {
   generalHealthPackages = healthCategories.find(cat => cat.id === 5)?.packages || [];
+
+  goBack(): void {
+    window.history.back();
+  }
 }

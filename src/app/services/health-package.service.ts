@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HealthPackage } from '../models/health-package.model';
-
+import { HealthPackage } from '../models/healthpackage.model';
 @Injectable({
   providedIn: 'root'
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HealthPackage } from '../../models/health-package.model';
+import { HealthPackage } from '../../models/healthpackage.model';
 import { HealthPackageService } from '../../services/health-package.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -32,6 +32,7 @@ export class HealthCheckupComponent {
   }
 
   onPackageClick(healthPackage: HealthPackage): void {
-    console.log(`Navigating to package: ${healthPackage.name}`);
+    const routePath = healthPackage.name.toLowerCase().replace(/\s+/g, '-');
+    this.router.navigate([routePath]);
   }
 }

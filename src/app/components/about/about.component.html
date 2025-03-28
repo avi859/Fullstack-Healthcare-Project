@@ -1,82 +1,112 @@
-<!-- About Us Hero Section -->
-<section class="about-hero">
-    <div class="about-hero-content">
-      <h1 class="about-hero-title">About Us</h1>
-      <p class="about-hero-subtitle">We are dedicated to revolutionizing healthcare through innovation and compassion.</p>
-    </div>
-  </section>
-  
-  <!-- Key Features Section -->
-  <section class="key-features">
-    <div class="feature">
-      <div class="feature-icon">🚚</div>
-      <h3 class="feature-title">Superfast Delivery</h3>
-      <p class="feature-description">Get your medicines delivered quickly and reliably in your city.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">💊</div>
-      <h3 class="feature-title">Wide Range of Medicines</h3>
-      <p class="feature-description">Access a vast selection of healthcare products and medicines.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🔄</div>
-      <h3 class="feature-title">Easy Returns</h3>
-      <p class="feature-description">No questions asked return policy for your convenience.</p>
-    </div>
-  </section>
-  
-  <!-- How It Works Section -->
-  <section class="how-it-works">
-    <h2 class="section-title">How It Works</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-icon">1</div>
-        <h3 class="step-title">Search for Medicines</h3>
-        <p class="step-description">Find the medicines you need using our easy search feature.</p>
-      </div>
-      <div class="step">
-        <div class="step-icon">2</div>
-        <h3 class="step-title">Place Your Order</h3>
-        <p class="step-description">Add items to your cart and proceed to checkout.</p>
-      </div>
-      <div class="step">
-        <div class="step-icon">3</div>
-        <h3 class="step-title">Get Fast Delivery</h3>
-        <p class="step-description">Enjoy superfast delivery right to your doorstep.</p>
+<div class="about-container">
+  <section class="hero-section" [@fadeIn]>
+    <div class="container">
+      <h1>Advancing Healthcare Through Excellence</h1>
+      <p>Setting new standards in patient care with cutting-edge medical expertise</p>
+      <div class="accreditation-badges">
+        <img src="https://www.jointcommission.org/-/media/tjc/idev-imports/about-us/tjc_enterprise_rgb_300.png" alt="Joint Commission Accreditation" class="accreditation-logo">
+        <img src="https://www.hipaajournal.com/wp-content/uploads/2016/04/hipaa-compliance-checklist.png" alt="HIPAA Compliant" class="accreditation-logo">
       </div>
     </div>
   </section>
-  
-  <!-- Call to Action Section -->
-  <section class="cta-section">
-    <h2 class="cta-title">Join Us in Revolutionizing Healthcare</h2>
-    <p class="cta-subtitle">Be a part of our mission to make healthcare accessible to all.</p>
-    <a routerLink="/contact" class="cta-button">Get in Touch</a>
-  </section>
-  
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      
-      <div class="footer-section">
-        <h3 class="footer-title">Payment Methods</h3>
-        <div class="payment-icons">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/gpay.svg" alt="Google Pay">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/paytm.svg" alt="Paytm">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/amazon-pay.svg" alt="Amazon Pay">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/phonepe.svg" alt="PhonePe">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/mobikwik.svg" alt="Mobikwik">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/airtel-money.svg" alt="Airtel Money">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/ola-money.svg" alt="Ola Money">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/maestro.svg" alt="Maestro">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/mastercard.svg" alt="Mastercard">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/visa.svg" alt="Visa">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/rupay.svg" alt="RuPay">
-          <img src="https://assets.pharmeasy.in/web-assets/_next/icons/diners.svg" alt="Diners Club">
+
+  <section class="values-section" [@fadeIn]>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let value of coreValues">
+          <div class="value-card">
+            <div class="icon-wrapper">
+              <i [class]="value.icon"></i>
+            </div>
+            <h3>{{value.title}}</h3>
+            <p>{{value.description}}</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 HealthCare+. All rights reserved.</p>
+  </section>
+
+  <section class="mission-section" [@fadeIn]>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://img.freepik.com/free-photo/team-young-specialist-doctors-standing-corridor-hospital_1303-21199.jpg" 
+               alt="Medical Team Discussion" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <h2>Our Mission & Vision</h2>
+          <div class="mission-content">
+            <p class="lead">To revolutionize healthcare delivery through innovation, compassion, and excellence.</p>
+            <ul>
+              <li>Evidence-based medical practices</li>
+              <li>Patient-centered comprehensive care</li>
+              <li>Cutting-edge medical technology</li>
+              <li>Continuous professional development</li>
+              <li>Community health initiatives</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="team-section" [@fadeIn]>
+    <div class="container">
+      <h2 class="section-title">Meet Our Leadership Team</h2>
+      <p class="section-subtitle">Experienced professionals dedicated to your health</p>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let member of teamMembers">
+          <div class="team-card" [@cardHover]="member.state" 
+               (mouseenter)="member.state = 'hover'"
+               (mouseleave)="member.state = 'normal'">
+            <div class="image-container">
+              <img [src]="member.image" [alt]="member.name" class="img-fluid">
+              <div class="overlay">
+                <p>{{member.description}}</p>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>{{member.name}}</h3>
+              <p class="role">{{member.role}}</p>
+              <p class="credentials">{{member.credentials}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section" [@fadeIn]>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let stat of statistics">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i [class]="stat.icon"></i>
+            </div>
+            <h3>{{stat.value}}</h3>
+            <p>{{stat.label}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" [@fadeIn]>
+    <div class="container">
+      <h2 class="section-title">Patient Success Stories</h2>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let testimonial of testimonials">
+          <div class="testimonial-card">
+            <div class="quote">"</div>
+            <p class="content">{{testimonial.content}}</p>
+            <div class="patient-info">
+              <p class="name">{{testimonial.name}}</p>
+              <p class="treatment">{{testimonial.treatment}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

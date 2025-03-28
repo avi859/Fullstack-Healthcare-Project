@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PackageCardComponent } from '../package-card/package-card.component';
 import { healthCategories } from '../../data/package.data/package.data.component';
 import { HealthPackage, Category } from '../../models/healthpackage.model';
-
+import { HealthPackageService } from '../../services/health-package.service';
 @Component({
   selector: 'app-cancer-screening',
   imports: [CommonModule, PackageCardComponent],
@@ -13,7 +13,8 @@ import { HealthPackage, Category } from '../../models/healthpackage.model';
 export class CancerScreeningComponent {
   cancerPackages: HealthPackage[] = healthCategories.find(cat => cat.id === 3)?.packages || [];
 
-  trackByPackageId(index: number, pkg: HealthPackage): number {
-    return pkg.id;
+  goBack(): void {
+    window.history.back();
   }
+  
 }

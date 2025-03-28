@@ -12,6 +12,7 @@ import emailjs from '@emailjs/browser';
   imports: [CommonModule, FormsModule, ReactiveFormsModule]
 })
 export class AppointmentComponent implements OnInit {
+
   appointmentForm: FormGroup;
   departments = [
     'Cardiology',
@@ -81,4 +82,8 @@ export class AppointmentComponent implements OnInit {
       console.error('Error sending email', error);
     });
   }
+
+    GoBack() {
+        window.history.back();
+    }
 }

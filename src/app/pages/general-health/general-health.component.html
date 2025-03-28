@@ -1,3 +1,4 @@
+<div class="back-button" (click)="goBack()">← Back</div>
 <div class="category-container">
     <div class="category-header">
       <h1>General Health Packages</h1>
@@ -42,7 +43,7 @@
 
     <div class="packages-grid">
       @for (package of generalHealthPackages; track package.id) {
-        <app-package-card [package]="packages"></app-package-card>
+        <app-package-card [package]="package"></app-package-card>
       }
     </div>
   </div>

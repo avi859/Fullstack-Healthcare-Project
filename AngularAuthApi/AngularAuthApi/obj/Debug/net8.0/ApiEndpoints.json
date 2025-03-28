@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AiChatController",
+    "Method": "AskGroq",
+    "RelativePath": "api/chat/ask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ChatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AngularAuthApi.Controllers.DoctorsController",
     "Method": "GetDoctors",
     "RelativePath": "api/Doctors",

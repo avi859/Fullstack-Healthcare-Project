@@ -2,7 +2,7 @@
 
 <div class="category-container">
   <div class="category-header">
-    <h1>Diabetes Care Packages</h1>
+    <h1>Pre-Conception Care Packages</h1>
     <p class="category-description">
       Take control of your diabetes management with our specialized healthcare packages. Regular monitoring and expert care for better health outcomes.
     </p>
@@ -39,7 +39,7 @@
   </div>
 
   <div class="packages-grid">
-    @for (package of diabetesPackages; track package.id) {
+    @for (package of preConceptionPackage; track package.id) {
       <app-package-card [package]="package"></app-package-card>
     }
   </div>
